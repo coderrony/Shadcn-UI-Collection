@@ -42,3 +42,8 @@ Start the server
 
 Live: https://shadcn-ui-collection.vercel.app/
 
+
+## Course Instructor repository
+
+- [@Tom Phillips](https://github.com/tomphill/support-me-course/tree/main)
+
