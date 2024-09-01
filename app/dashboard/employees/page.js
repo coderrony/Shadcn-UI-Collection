@@ -1,10 +1,13 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-
 import { columns } from "./columns";
 import { DataTable } from "@/components/custom-ui/data-table";
 
+// A helper function to create a delay
+const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
 export default async function EmployeesPage() {
-  // await setTimeout(2000);
+  // Wait for 2 seconds
+  await delay(2000);
 
   const employees = [
     {
@@ -74,6 +77,7 @@ export default async function EmployeesPage() {
       isTeamLeader: false,
     },
   ];
+
   return (
     <Card>
       <CardHeader>

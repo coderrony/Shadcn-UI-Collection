@@ -17,15 +17,14 @@ function LightDarkToggle({ className }) {
         <TooltipTrigger
           className={className}
           onClick={() => {
-            setIsDark((prev) => !prev);
+            setIsDark((prevValue) => !prevValue);
             document.body.classList.toggle("dark");
           }}
-          asChild
         >
-          {isDark ? <SunIcon /> : <MoonIcon />}
+          {isDark ? <MoonIcon /> : <SunIcon />}
         </TooltipTrigger>
         <TooltipContent>
-          {isDark ? <p>Enable Light Mode</p> : <p>Enable Dark Mode</p>}
+          {isDark ? "Enable light mode" : "Enable dark mode"}
         </TooltipContent>
       </Tooltip>
     </TooltipProvider>
